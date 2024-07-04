@@ -28,6 +28,7 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const navListMenuItems = [
   {
@@ -158,25 +159,57 @@ function NavListMenu() {
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:items-center lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        className="font-medium text-black text-base hover:underline hover:underline-offset-4 duration-100 hover:bg-white"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
-      </Typography>
+      <Link to={"/"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="small"
+          className="font-medium text-black text-base hover:underline hover:underline-offset-4 duration-100 hover:bg-white"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Home
+          </ListItem>
+        </Typography>
+      </Link>
       <NavListMenu />
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        className="font-medium text-black text-base hover:underline hover:underline-offset-4 duration-100 hover:bg-white"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact Us
-        </ListItem>
-      </Typography>
+      <Link to={"/contact"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="small"
+          className="font-medium text-black text-base hover:underline hover:underline-offset-4 duration-100 hover:bg-white"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Contact Us
+          </ListItem>
+        </Typography>
+      </Link>
+
+      <Link to={"/about"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="small"
+          className="font-medium text-black text-base hover:underline hover:underline-offset-4 duration-100 hover:bg-white"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            About
+          </ListItem>
+        </Typography>
+      </Link>
+
+      <Link to={"/signUp"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="small"
+          className="font-medium text-black text-base hover:underline hover:underline-offset-4 duration-100 hover:bg-white"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Sign Up
+          </ListItem>
+        </Typography>
+      </Link>
     </List>
   );
 }
@@ -197,10 +230,10 @@ export function Navigation() {
         <Typography
           as="a"
           href="#"
-          variant="h5"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          // variant="h5"
+          className="text-base lg:text-xl font-bold mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
-          Material Tailwind
+          Exclusive Commerce
         </Typography>
         <div className="hidden lg:block">
           <NavList />
