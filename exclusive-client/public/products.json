@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "product_name": "Stylish Category T-Shirt",
+    "image": "./images/t_shirt_1.jpg",
+    "price": 29.99,
+    "total_reviewed": 120,
+    "star": 5.0,
+    "description": "High-quality product 1",
+    "discounted_percent": 10,
+    "gender": "Men",
+    "category": "Clothing"
+  },
+  {
+    "id": 2,
+    "product_name": "Stylish Category T-Shirt",
+    "image": "./images/t_shirt_2.jpg",
+    "price": 49.99,
+    "total_reviewed": 85,
+    "star": 4.5,
+    "description": "Durable and reliable product 2",
+    "discounted_percent": 15,
+    "gender": "Men",
+    "category": "Clothing"
+  },
+  {
+    "id": 3,
+    "product_name": "Stylish Category T-Shirt",
+    "image": "./images/t_shirt_3.jpg",
+    "price": 19.99,
+    "total_reviewed": 200,
+    "star": 3.0,
+    "description": "Affordable product 3 with decent features",
+    "discounted_percent": 5,
+    "gender": "Women",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "product_name": "Stylish Category T-Shirt",
+    "image": "./images/t_shirt_4.jpg",
+    "price": 99.99,
+    "total_reviewed": 150,
+    "star": 4.5,
+    "description": "Premium product 4 with excellent performance",
+    "discounted_percent": 20,
+    "gender": "Men",
+    "category": "Clothing"
+  },
+  {
+    "id": 5,
+    "product_name": "Stylish Category T-Shirt",
+    "image": "./images/t_shirt_5.jpg",
+    "price": 39.99,
+    "total_reviewed": 60,
+    "star": 5.0,
+    "description": "Top-rated product 5 with great value",
+    "discounted_percent": 25,
+    "gender": "Women",
+    "category": "Clothing"
+  },
+  {
+    "id": 6,
+    "product_name": "Stylish Category T-Shirt",
+    "image": "./images/t_shirt_6.jpg",
+    "price": 59.99,
+    "total_reviewed": 90,
+    "star": 3.0,
+    "description": "Reliable product 6 with good features",
+    "discounted_percent": 10,
+    "gender": "Men",
+    "category": "Clothing"
+  }
+]
