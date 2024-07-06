@@ -42,7 +42,7 @@ export function SmSidebar() {
   const closeDrawer = () => setIsDrawerOpen(false);
 
   return (
-    <>
+    <div className="z-100">
       <IconButton variant="text" size="lg" onClick={openDrawer}>
         {isDrawerOpen ? (
           <XMarkIcon className="h-6 w-8 stroke-2" />
@@ -52,7 +52,6 @@ export function SmSidebar() {
       </IconButton>
       <Drawer open={isDrawerOpen} onClose={closeDrawer}>
         <Card className="min-h-[calc(20vh-2rem)] w-full max-w-[20rem] p-4 shadow-none border-r-2 rounded-none ">
-         
           <div className="p-2">
             <Input
               icon={<MagnifyingGlassIcon className="h-5 w-5" />}
@@ -185,6 +184,6 @@ export function SmSidebar() {
           </List>
         </Card>
       </Drawer>
-    </>
+    </div>
   );
 }

@@ -21,7 +21,7 @@ const Banner = () => {
       >
         <SwiperSlide>
           <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center px-20 py-10 lg:py-0  bg-black text-white">
-            <div className="flex flex-col items-start justify-center gap-y-2 lg:gap-y-10">
+            <div className="flex flex-col items-start justify-center gap-y-4 lg:gap-y-10">
               <div className="w-48">
                 <img src="/src/assets/iphone.svg" alt="" className="h-4" />
               </div>
@@ -55,7 +55,7 @@ const Banner = () => {
             </div>
           </div>
         </SwiperSlide>
-        
+
         <SwiperSlide>
           <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center px-20 py-10 lg:py-0  bg-black text-white">
             <div className="flex flex-col items-start justify-center gap-y-2 lg:gap-y-10">
@@ -92,9 +92,6 @@ const Banner = () => {
             </div>
           </div>
         </SwiperSlide>
-
-
-
       </Swiper>
     </div>
   );
