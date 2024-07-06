@@ -29,6 +29,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import { SmSidebar } from "../../Pages/Home/Hero/SmSidebar";
 
 const navListMenuItems = [
   {
@@ -227,14 +228,21 @@ export function Navigation() {
   return (
     <Navbar className="mx-auto min-w-full px-5 lg:px-10 py-2 lg:py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          // variant="h5"
-          className="text-base lg:text-xl font-bold mr-4 cursor-pointer py-1.5 lg:ml-2"
-        >
-          Exclusive Commerce
-        </Typography>
+        <div className="flex items-center flex-row-reverse">
+          <Typography
+            as="a"
+            href="#"
+            // variant="h5"
+            className="text-base lg:text-xl font-bold mr-4 cursor-pointer py-1.5 lg:ml-2"
+          >
+            Exclusive Commerce
+          </Typography>
+
+          <div className="block lg:hidden">
+            <SmSidebar />
+          </div>
+        </div>
+
         <div className="hidden lg:block">
           <NavList />
         </div>
