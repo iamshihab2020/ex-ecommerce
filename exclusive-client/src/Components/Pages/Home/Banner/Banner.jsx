@@ -25,7 +25,7 @@ const Banner = () => {
               <div className="w-48">
                 <img src="/src/assets/iphone.svg" alt="" className="h-4" />
               </div>
-              <Typography variant="h1" className="text-left">
+              <Typography variant="h1" className="text-left text-3xl md:text-5xl lg:text-6xl">
                 Up to 10% <br /> off Voucher
               </Typography>
               <Link
@@ -62,7 +62,7 @@ const Banner = () => {
               <div className="w-48">
                 <img src="/src/assets/iphone.svg" alt="" className="h-4" />
               </div>
-              <Typography variant="h1" className="text-left">
+              <Typography variant="h1" className="text-left text-3xl md:text-5xl lg:text-6xl">
                 Up to 10% <br /> off Voucher
               </Typography>
               <Link
