@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Camera"
+  },
+  {
+    "id": 2,
+    "name": "Phones"
+  },
+  {
+    "id": 3,
+    "name": "SmartWatch"
+  },
+  {
+    "id": 4,
+    "name": "Headphones"
+  },
+  {
+    "id": 5,
+    "name": "Computers"
+  },
+  {
+    "id": 6,
+    "name": "Gaming"
+  }
+]

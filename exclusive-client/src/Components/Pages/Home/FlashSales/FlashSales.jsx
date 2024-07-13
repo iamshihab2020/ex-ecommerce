@@ -26,7 +26,7 @@ function MyTime() {
 
 const FlashSales = () => {
   return (
-    <div className="border-b-2 border-black">
+    <div className="border-b-2 border-gray-500">
       <div className="flex flex-col items-start justify-start gap-y-5 py-20">
         <SectionHead title="Today's" />
         <div>
