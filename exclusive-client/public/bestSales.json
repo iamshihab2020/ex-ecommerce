@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "product_name": "Stylish Category T-Shirt",
-    "image": "/images/t_shirt_1.jpg",
+    "product_name": "Stylish Sneakers Men",
+    "image": "./images/best1.jpg",
     "price": 29.99,
     "total_reviewed": 120,
     "star": 5,
     "description": "High-quality product 1",
     "discounted_percent": 10,
     "gender": "Men",
-    "category": "Clothing"
+    "category": "Footwear"
   },
   {
     "id": 2,
-    "product_name": "Stylish Category T-Shirt",
-    "image": "/images/t_shirt_2.jpg",
+    "product_name": "Stylish Sneakers Women",
+    "image": "./images/best2.jpg",
     "price": 49.99,
     "total_reviewed": 85,
     "star": 4,
     "description": "Durable and reliable product 2",
     "discounted_percent": 15,
     "gender": "Men",
-    "category": "Clothing"
+    "category": "Footwear"
   },
   {
     "id": 3,
-    "product_name": "Stylish Category T-Shirt",
-    "image": "/images/t_shirt_3.jpg",
+    "product_name": "Stylish Shorts",
+    "image": "./images/best3.jpg",
     "price": 19.99,
     "total_reviewed": 200,
     "star": 3,
@@ -37,20 +37,20 @@
   },
   {
     "id": 4,
-    "product_name": "Stylish Category T-Shirt",
-    "image": "/images/t_shirt_4.jpg",
+    "product_name": "Stylish Leggings",
+    "image": "./images/best4.jpg",
     "price": 99.99,
     "total_reviewed": 150,
     "star": 4,
     "description": "Premium product 4 with excellent performance",
     "discounted_percent": 20,
-    "gender": "Men",
+    "gender": "Women",
     "category": "Clothing"
   },
   {
     "id": 5,
-    "product_name": "Stylish Category T-Shirt",
-    "image": "/images/t_shirt_5.jpg",
+    "product_name": "Stylish Tops",
+    "image": "./images/best5.jpg",
     "price": 39.99,
     "total_reviewed": 60,
     "star": 5,
@@ -61,8 +61,8 @@
   },
   {
     "id": 6,
-    "product_name": "Stylish Category T-Shirt",
-    "image": "/images/t_shirt_6.jpg",
+    "product_name": "Stylish Men T-Shirt",
+    "image": "./images/best6.jpg",
     "price": 59.99,
     "total_reviewed": 90,
     "star": 3,

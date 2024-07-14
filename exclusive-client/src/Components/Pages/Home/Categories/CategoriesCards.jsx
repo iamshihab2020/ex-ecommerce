@@ -5,7 +5,6 @@ import "swiper/css/pagination";
 import "./CSS/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import BigButton from "../../../Shared/MainButton/BigButton";
 import { Card, Typography } from "@material-tailwind/react";
 import { CameraIcon, ComputerDesktopIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { BiHeadphone, BiJoystick } from "react-icons/bi";
@@ -98,9 +97,6 @@ const CategoriesCards = () => {
           </Swiper>
         </div>
 
-        <div className="flex items-center justify-center pt-10">
-          <BigButton title="View All Products" />
-        </div>
       </div>
     </div>
   );

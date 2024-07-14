@@ -1,5 +1,4 @@
 import { useState } from "react";
-import useProducts from "../../../../../Hooks/useProducts";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./CSS/styles.css";
@@ -10,17 +9,16 @@ import {
   CardHeader,
   CardBody,
   Typography,
-  Chip,
   IconButton,
   Button,
 } from "@material-tailwind/react";
-import StarRating from "./StarIcon";
-import BigButton from "../../../../Shared/MainButton/BigButton";
+// import BigButton from "../../../../Shared/MainButton/BigButton";
 import { MutatingDots } from "react-loader-spinner";
-import { Link } from "react-router-dom";
+import useBestSales from "../../../../Hooks/useBestSales";
+import StarRating from "../FlashSales/FlashCards/StarIcon";
 
-const FlashCardLg = () => {
-  const { products, isLoading } = useProducts();
+const BestSalesCards = () => {
+  const { bestSales, isLoading } = useBestSales();
   const [hoveredCard, setHoveredCard] = useState(null);
 
   if (isLoading)
@@ -70,7 +68,7 @@ const FlashCardLg = () => {
           modules={[Pagination]}
           className="mySwiper p-20"
         >
-          {products.map((product) => (
+          {bestSales.map((product) => (
             <SwiperSlide key={product.id} className="pb-20">
               <div
                 onMouseEnter={() => setHoveredCard(product.id)}
@@ -88,15 +86,6 @@ const FlashCardLg = () => {
                       alt={product.product_name}
                       className="min-h-[350px] object-fill z-0"
                     />
-
-                    {product.discounted_percent && (
-                      <div className="absolute top-4 left-4 z-10">
-                        <Chip
-                          value={`- ${product.discounted_percent}%`}
-                          className="bg-primary font-normal text-sm"
-                        />
-                      </div>
-                    )}
 
                     <div className="absolute top-4 right-4 flex flex-col gap-y-4 ">
                       <IconButton className="bg-white hover:bg-primary rounded-full text-black hover:text-white duration-150 transition-colors">
@@ -116,29 +105,27 @@ const FlashCardLg = () => {
                         </svg>
                       </IconButton>
 
-                      <Link to={`/product/${product.id}`}>
-                        <IconButton className="bg-white hover:bg-primary rounded-full text-black hover:text-white duration-150 transition-colors">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="size-6"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                            />
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                            />
-                          </svg>
-                        </IconButton>
-                      </Link>
+                      <IconButton className="bg-white hover:bg-primary rounded-full text-black hover:text-white duration-150 transition-colors">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="size-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                          />
+                        </svg>
+                      </IconButton>
                     </div>
 
                     <div
@@ -161,15 +148,13 @@ const FlashCardLg = () => {
                     <div className="flex items-center justify-between">
                       <div>
                         <Typography className="font-medium flex items-center gap-x-3 text-lg text-primary my-1 ">
-                          <span>
+                          ${product.price}
+                          <span className="text-gray-600 line-through">
                             {`$`}
                             {(
                               product.price -
                               (product.price * product.discounted_percent) / 100
                             ).toFixed(2)}
-                          </span>
-                          <span className="text-gray-600 line-through">
-                            ${product.price}
                           </span>
                         </Typography>
                       </div>
@@ -185,12 +170,8 @@ const FlashCardLg = () => {
           ))}
         </Swiper>
       </div>
-
-      <div className="flex items-center justify-center pt-10">
-        <BigButton title="View All Products" />
-      </div>
     </div>
   );
 };
 
-export default FlashCardLg;
+export default BestSalesCards;
