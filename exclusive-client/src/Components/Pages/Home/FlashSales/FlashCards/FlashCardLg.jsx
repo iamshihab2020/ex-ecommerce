@@ -143,7 +143,9 @@ const FlashCardLg = () => {
 
                     <div
                       className={`absolute w-full transition-all duration-300 ${
-                        hoveredCard === product.id ? "top-72" : "top-96"
+                        hoveredCard === product.id
+                          ? "top-64 lg:top-72"
+                          : "top-96"
                       }`}
                     >
                       <Button

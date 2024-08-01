@@ -26,8 +26,8 @@ const ProductDetails = () => {
   } = productData;
 
   return (
-    <div className="px-5 md:px-8 lg:px-14">
-      <div className="flex items-center justify-around flex-col lg:flex-row border-b-2 border-primary">
+    <div className="px-5 md:px-8 lg:px-14 animate__animated animate__zoomIn mt-10">
+      <div className="flex items-center justify-around flex-col lg:flex-row border-b-2 border-primary pb-10">
         <div>
           <img src={image} alt={product_name} className="max-h-[600px]" />
         </div>
