@@ -29,7 +29,7 @@ export function Sidebar() {
   };
 
   return (
-    <Card className="min-h-[calc(20vh-2rem)] w-full max-w-[20rem] p-4 shadow-none border-r-2 rounded-none hidden lg:block ">
+    <Card className="min-h-[calc(20vh-2rem)] w-full max-w-[20rem] p-4 shadow-none border-r-2 rounded-none hidden  lg:block z-[100]">
       <List>
         <Accordion
           open={open === 1}

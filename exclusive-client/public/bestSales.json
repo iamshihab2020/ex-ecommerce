@@ -2,7 +2,7 @@
   {
     "id": 1,
     "product_name": "Stylish Sneakers Men",
-    "image": "./images/best1.jpg",
+    "image": "/images/best1.jpg",
     "price": 29.99,
     "total_reviewed": 120,
     "star": 5,
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "product_name": "Stylish Sneakers Women",
-    "image": "./images/best2.jpg",
+    "image": "/images/best2.jpg",
     "price": 49.99,
     "total_reviewed": 85,
     "star": 4,
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "product_name": "Stylish Shorts",
-    "image": "./images/best3.jpg",
+    "image": "/images/best3.jpg",
     "price": 19.99,
     "total_reviewed": 200,
     "star": 3,
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "product_name": "Stylish Leggings",
-    "image": "./images/best4.jpg",
+    "image": "/images/best4.jpg",
     "price": 99.99,
     "total_reviewed": 150,
     "star": 4,
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "product_name": "Stylish Tops",
-    "image": "./images/best5.jpg",
+    "image": "/images/best5.jpg",
     "price": 39.99,
     "total_reviewed": 60,
     "star": 5,
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "product_name": "Stylish Men T-Shirt",
-    "image": "./images/best6.jpg",
+    "image": "/images/best6.jpg",
     "price": 59.99,
     "total_reviewed": 90,
     "star": 3,

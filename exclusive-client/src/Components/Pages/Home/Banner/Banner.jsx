@@ -13,14 +13,14 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
-    <div className="h-[500px]">
+    <div className="h-[500px] z-0 relative">
       <Swiper
         pagination={true}
         modules={[Pagination]}
-        className="myswiper w-full"
+        className="myswiper w-full z-0"
       >
         <SwiperSlide>
-          <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center px-20 py-10 lg:py-0  bg-black text-white">
+          <div className="z-0 w-full h-full flex flex-col lg:flex-row justify-between items-center px-20 py-10 lg:py-0  bg-black text-white relative">
             <div className="flex flex-col items-start justify-center gap-y-4 lg:gap-y-10">
               <div className="w-48">
                 <img src="/src/assets/iphone.svg" alt="" className="h-4" />

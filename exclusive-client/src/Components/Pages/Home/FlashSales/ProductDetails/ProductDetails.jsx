@@ -1,7 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import { useLoaderData, useParams } from "react-router-dom";
 import StarRating from "../FlashCards/StarIcon";
-import FlashCardLg from "../FlashCards/FlashCardLg";
+import BestSales from "../../BestSales/BestSales";
 
 const ProductDetails = () => {
   const products = useLoaderData();
@@ -26,8 +26,8 @@ const ProductDetails = () => {
   } = productData;
 
   return (
-    <div>
-      <div className="flex items-center justify-around flex-col lg:flex-row">
+    <div className="px-5 md:px-8 lg:px-14">
+      <div className="flex items-center justify-around flex-col lg:flex-row border-b-2 border-primary">
         <div>
           <img src={image} alt={product_name} className="max-h-[600px]" />
         </div>
@@ -63,7 +63,7 @@ const ProductDetails = () => {
       </div>
 
       <div>
-        <FlashCardLg />
+        <BestSales />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import BestSales from "../BestSales/BestSales";
-import BestSalesCards from "../BestSales/BestSalesCards";
 import Categories from "../Categories/Categories";
 import FlashSales from "../FlashSales/FlashSales";
 import Hero from "../Hero/Hero";
