@@ -1,3 +1,4 @@
+import Banner_Part_2 from "../Banner_Part_2/Banner_Part_2";
 import BestSales from "../BestSales/BestSales";
 import Categories from "../Categories/Categories";
 import FlashSales from "../FlashSales/FlashSales";
@@ -15,6 +16,9 @@ const Home = () => {
       </div>
       <div className="px-5 lg:px-14 mt-20">
         <BestSales />
+      </div>
+      <div className="px-5 lg:px-14 mt-20 mb-20">
+        <Banner_Part_2 />
       </div>
     </div>
   );

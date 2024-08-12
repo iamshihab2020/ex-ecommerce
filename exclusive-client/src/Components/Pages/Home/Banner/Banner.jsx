@@ -13,19 +13,19 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
-    <div className="h-[500px] z-0 relative">
+    <div className="h-[500px] z-0 relative p-0">
       <Swiper
         pagination={true}
         modules={[Pagination]}
         className="myswiper w-full z-0"
       >
         <SwiperSlide>
-          <div className="z-0 w-full h-full flex flex-col lg:flex-row justify-between items-center px-20 py-10 lg:py-0  bg-black text-white relative">
+          <div className="z-0 w-full h-full flex flex-col lg:flex-row justify-between items-center px-8 lg:px-20 py-10 lg:py-0  bg-black text-white relative">
             <div className="flex flex-col items-start justify-center gap-y-4 lg:gap-y-10">
               <div className="w-48">
                 <img src="/src/assets/iphone.svg" alt="" className="h-4" />
               </div>
-              <Typography variant="h1" className="text-left text-3xl md:text-5xl lg:text-6xl">
+              <Typography variant="h1" className="text-left text-4xl md:text-5xl lg:text-6xl">
                 Up to 10% <br /> off Voucher
               </Typography>
               <Link
@@ -57,19 +57,19 @@ const Banner = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center px-20 py-10 lg:py-0  bg-black text-white">
+          <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center px-8 lg:px-20 py-10 lg:py-0  bg-black text-white">
             <div className="flex flex-col items-start justify-center gap-y-2 lg:gap-y-10">
               <div className="w-48">
                 <img src="/src/assets/iphone.svg" alt="" className="h-4" />
               </div>
-              <Typography variant="h1" className="text-left text-3xl md:text-5xl lg:text-6xl">
+              <Typography variant="h1" className="text-left text-4xl md:text-5xl lg:text-6xl">
                 Up to 10% <br /> off Voucher
               </Typography>
               <Link
                 to={"/"}
                 className="underline underline-offset-8 text-lg flex items-center justify-start gap-x-1 hover:text-primary duration-150"
               >
-                Shop Now{" "}
+                Shop Now
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
